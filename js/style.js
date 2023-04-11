@@ -16,3 +16,9 @@ const price = {
         lamination: [40, 70]
     }
 }
+
+const copyInput = document.querySelectorAll();
+
+function calculator (inputValue, inpPrice) {
+    return inputValue * inpPrice;
+}
