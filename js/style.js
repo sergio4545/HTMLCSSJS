@@ -21,7 +21,6 @@ const input = document.querySelectorAll('.inp');
 
 input.forEach(item => {
     item.addEventListener('input', () => {
-        console.log('Hi');
         const other = +document.querySelector('.other__price').value,
             copyA4Black = resultPrice('.copy__a4black', price.copy.a4black),
             copyA4Color = resultPrice('.copy__a4color', price.copy.a4color),
@@ -43,14 +42,12 @@ input.forEach(item => {
 function resultPricePhoto (nameClass, price) {
     const value = +document.querySelector(nameClass).value;
     let pricePhoto = quantityPhoto(value, price);
-    console.log(value);
     return pricePhoto;
 }
 
 function resultPrice (nameClass, price) {
     const value = +document.querySelector(nameClass).value;
     let priceOther = calculator(value, price);
-    console.log(priceOther);
     return priceOther;
     
 }
