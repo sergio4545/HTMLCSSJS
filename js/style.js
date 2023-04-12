@@ -39,6 +39,11 @@ input.forEach(item => {
        
 });
 
+document.querySelector('.reset').addEventListener('click', () => {
+    input.forEach(item => item.value = '');
+    document.querySelector('.price').innerHTML = '0';
+});
+
 function resultPricePhoto (nameClass, price) {
     const value = +document.querySelector(nameClass).value;
     let pricePhoto = quantityPhoto(value, price);
